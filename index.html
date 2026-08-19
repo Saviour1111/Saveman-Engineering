@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saveman Engineering | Repairs & Maintenance</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #172033;
+            background: #f5f9fc;
+        }
+
+        header {
+            background: #075985;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bae6fd;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 7%;
+            background: linear-gradient(135deg, #e0f2fe, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #075985;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #475569;
+        }
+
+        .button {
+            display: inline-block;
+            background: #075985;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background: #0369a1;
+        }
+
+        .button.secondary {
+            background: white;
+            color: #075985;
+            border: 2px solid #075985;
+        }
+
+        section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #075985;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #075985;
+            margin-bottom: 10px;
+        }
+
+        .tools {
+            background: #e0f2fe;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .contact {
+            background: #075985;
+            color: white;
+        }
+
+        .contact .section-title h2,
+        .contact .section-title p {
+            color: white;
+        }
+
+        .contact-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            color: #172033;
+            padding: 35px;
+            border-radius: 10px;
+        }
+
+        .contact-item {
+            margin: 18px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #082f49;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Saveman Engineering</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Engineering Repairs & Maintenance</h1>
+
+        <p>
+            Reliable technical solutions for electrical, electronic,
+            equipment repair and maintenance.
+        </p>
+
+        <a href="#services" class="button">Our Services</a>
+
+        <a href="#contact" class="button secondary">Contact Us</a>
+
+    </div>
+
+</section>
+
+
+<section id="services">
+
+    <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>Professional engineering and technical services.</p>
+
+    </div>
+
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">🔧</div>
+            <h3>Equipment Repairs</h3>
+            <p>
+                Diagnosis and repair of electrical, electronic
+                and technical equipment.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Electrical Services</h3>
+            <p>
+                Electrical troubleshooting, testing and
+                maintenance services.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>Maintenance</h3>
+            <p>
+                Preventive and corrective maintenance to
+                keep equipment operating properly.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🔍</div>
+            <h3>Fault Diagnosis</h3>
+            <p>
+                Systematic troubleshooting to identify
+                electrical and equipment faults.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="tools" id="tools">
+
+    <div class="section-title">
+
+        <h2>Engineering Tools</h2>
+
+        <p>Professional tools used for testing, diagnosis and maintenance.</p>
+
+    </div>
+
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">📏</div>
+            <h3>Digital Multimeter</h3>
+            <p>
+                Used for measuring voltage, current,
+                resistance and continuity.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Insulation Tester</h3>
+            <p>
+                Used to test insulation resistance
+                in electrical systems.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🔌</div>
+            <h3>Clamp Meter</h3>
+            <p>
+                Used for measuring electrical current
+                without disconnecting the circuit.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h3>Electronic Testing Equipment</h3>
+            <p>
+                Diagnostic equipment used for
+                electronic troubleshooting.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>About Saveman Engineering</h2>
+
+        <p>Technical solutions built around reliability.</p>
+
+    </div>
+
+
+    <div class="card">
+
+        <p>
+            Saveman Engineering provides repair, maintenance,
+            troubleshooting and technical support services.
+            Our goal is to help customers keep their equipment
+            reliable, safe and operational.
+        </p>
+
+        <br>
+
+        <p>
+            We combine practical engineering knowledge with
+            appropriate testing instruments and systematic
+            fault-finding methods.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Contact Saveman Engineering</h2>
+
+        <p>Need a repair or technical service?</p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            📞 <strong>Phone:</strong> Add your phone number
+        </div>
+
+        <div class="contact-item">
+            📧 <strong>Email:</strong> Add your email address
+        </div>
+
+        <div class="contact-item">
+            📍 <strong>Location:</strong> Nigeria
+        </div>
+
+        <br>
+
+        <a href="tel:" class="button">Call Us</a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Saveman Engineering. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
